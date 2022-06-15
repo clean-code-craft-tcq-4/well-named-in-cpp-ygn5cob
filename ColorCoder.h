@@ -46,7 +46,7 @@ namespace TelCoColorCoder
                    for(int j=0; j<numberOfMinorColors;j++)
                    {
                        count++;
-                       std::cout << count<<"\t"<< MajorColorNames[i]<<"\t"<<MinorColorNames[j]<< std::endl;
+                       std::cout << count<<"\t\t"<< MajorColorNames[i]<<"\t\t"<<MinorColorNames[j]<< std::endl;
                    }
                    
                }
