@@ -21,6 +21,7 @@ namespace TelCoColorCoder
             MajorColor majorColor;
             MinorColor minorColor;
         public:
+            ColorPair(){}
             ColorPair(MajorColor major, MinorColor minor):
                 majorColor(major), minorColor(minor)
             {}
