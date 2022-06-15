@@ -36,4 +36,18 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
+           void printCombination()
+           {
+               int count = 0;
+               std::cout << "pair number\t Major Color\t Minor Color" << std::endl;
+               for(int i=0; i<numberOfMajorColors;i++)
+               {
+                   for(int j=0; j<numberOfMinorColors;j++)
+                   {
+                       count++;
+                       std::cout << count<<"\t"<< MajorColorNames[i]<<"\t"<<MinorColorNames[j]<< std::endl;
+                   }
+                   
+               }
+           }
     };
