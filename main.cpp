@@ -1,8 +1,6 @@
 #include <assert.h>
 #include "ColorCoder.h"
 
-using namespace TelCoColorCoder;
-
  ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
@@ -38,7 +36,7 @@ void testPairToNumber(
 }
 
 int main() {
-    ColorPair pair;
+    TelCoColorCoder::ColorPair pair;
     pair.printCombination();
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
