@@ -36,6 +36,8 @@ void testPairToNumber(
 }
 
 int main() {
+    ColorPair pair;
+    pair.printCombination();
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
