@@ -1,6 +1,8 @@
 #include <assert.h>
 #include "ColorCoder.h"
 
+using namespace TelCoColorCoder;
+
  ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
