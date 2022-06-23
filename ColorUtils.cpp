@@ -8,6 +8,6 @@
             (MinorColor)(zeroBasedPairNumber % TelCoColorCoder::numberOfMinorColors);
         return TelCoColorCoder::ColorPair(majorColor, minorColor);
     }
-    int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
+    int GetPairNumberFromColor(TelCoColorCoder::MajorColor major, TelCoColorCoder::MinorColor minor) {
         return major * TelCoColorCoder::numberOfMinorColors + minor + 1;
     }
