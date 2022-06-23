@@ -1,3 +1,5 @@
+#ifndef ColorCoder
+#define ColorCoder
 #include <iostream>
 namespace TelCoColorCoder
 {
@@ -50,3 +52,4 @@ namespace TelCoColorCoder
            }
     };
 }
+#endif
