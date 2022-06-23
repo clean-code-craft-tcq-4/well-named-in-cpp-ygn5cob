@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "ColorUtils.cpp"
+
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
