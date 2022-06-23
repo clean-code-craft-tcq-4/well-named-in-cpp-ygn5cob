@@ -13,7 +13,6 @@ namespace TelCoColorCoder{
     };
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-}
 std::string ToString() {
                 std::string colorPairStr = MajorColorNames[majorColor];
                 colorPairStr += " ";
@@ -32,6 +31,7 @@ std::string ToString() {
                    }      
                }
            }
+}
 
  TelCoColorCoder::ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
