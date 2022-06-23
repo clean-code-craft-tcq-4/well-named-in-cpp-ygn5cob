@@ -10,7 +10,8 @@ namespace TelCoColorCoder
             MajorColor majorColor;
             MinorColor minorColor;
         public:
-            ColorPair(){}
+            std::array<std::string, 3> MajorColorNames;
+            ColorPair():MajorColorNames(){}
             ColorPair(MajorColor major, MinorColor minor):
                 majorColor(major), minorColor(minor)
             {}
