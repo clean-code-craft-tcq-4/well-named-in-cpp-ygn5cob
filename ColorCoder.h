@@ -1,5 +1,4 @@
 #include <iostream>
-
 namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
