@@ -1,5 +1,7 @@
 #include "ColorCoder.h"
 
+namespace TelCoColorCoder
+{
  ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
@@ -11,4 +13,5 @@
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+}
 }
