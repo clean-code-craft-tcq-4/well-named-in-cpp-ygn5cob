@@ -3,20 +3,6 @@
 #include <iostream>
 namespace TelCoColorCoder
 {
-    enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-    enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
-
-    const char* MajorColorNames[] = {
-        "White", "Red", "Black", "Yellow", "Violet"
-    };
-    int numberOfMajorColors =
-        sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-    const char* MinorColorNames[] = {
-        "Blue", "Orange", "Green", "Brown", "Slate"
-    };
-    int numberOfMinorColors =
-        sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
     class ColorPair {
         private:
             MajorColor majorColor;
@@ -32,24 +18,8 @@ namespace TelCoColorCoder
             MinorColor getMinor() {
                 return minorColor;
             }
-            std::string ToString() {
-                std::string colorPairStr = MajorColorNames[majorColor];
-                colorPairStr += " ";
-                colorPairStr += MinorColorNames[minorColor];
-                return colorPairStr;
-            }
-           void printCombination() {
-               int count = 0;
-               std::cout << "pair number\t Major Color\t Minor Color" << std::endl;
-               for(int i=0; i<numberOfMajorColors;i++)
-               {
-                   for(int j=0; j<numberOfMinorColors;j++)
-                   {
-                       count++;
-                       std::cout << count<<"\t\t"<< MajorColorNames[i]<<"\t\t"<<MinorColorNames[j]<< std::endl;
-                   }      
-               }
-           }
+            std::string ToString(); 
+           void printCombination() ;
     };
 }
 #endif
