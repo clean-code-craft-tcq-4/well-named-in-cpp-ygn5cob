@@ -10,13 +10,14 @@ namespace TelCoColorCoder{
     };
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-std::string ToString() {
+    
+std::string ColorPair::ToString() {
                 std::string colorPairStr = MajorColorNames[majorColor];
                 colorPairStr += " ";
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
-           void printCombination() {
+           void ColorPair::printCombination() {
                int count = 0;
                std::cout << "pair number\t Major Color\t Minor Color" << std::endl;
                for(int i=0; i<numberOfMajorColors;i++)
