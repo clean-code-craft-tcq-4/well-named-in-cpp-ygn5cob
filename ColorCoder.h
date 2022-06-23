@@ -15,7 +15,7 @@ namespace TelCoColorCoder
     };
     int numberOfMinorColors =
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
+}
     class ColorPair {
         private:
             MajorColor majorColor;
@@ -52,4 +52,3 @@ namespace TelCoColorCoder
                }
            }
     };
-}
