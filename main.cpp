@@ -12,11 +12,14 @@
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+}
+
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
     TelCoColorCoder::MinorColor expectedMinor)
 {
-    TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+    TelCoColorCoder::ColorPair colorPair =
+        TelCoColorCoder::GetColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.ToString() << std::endl;
     assert(colorPair.getMajor() == expectedMajor);
     assert(colorPair.getMinor() == expectedMinor);
@@ -40,5 +43,6 @@ int main() {
 
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
+
     return 0;
 }
