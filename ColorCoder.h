@@ -3,7 +3,6 @@ namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
     enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
-
     const char* MajorColorNames[] = {
         "White", "Red", "Black", "Yellow", "Violet"
     };
@@ -36,8 +35,7 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
-           void printCombination()
-           {
+           void printCombination(){
                int count = 0;
                std::cout << "pair number\t Major Color\t Minor Color" << std::endl;
                for(int i=0; i<numberOfMajorColors;i++)
