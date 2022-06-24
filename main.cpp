@@ -21,10 +21,10 @@ void testPairToNumber(
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
-
+using namespace TelCoColorCoder{
 int main() {
-    TelCoColorCoder::ColorPair pair;
-    pair.printCombination();
+    
+    printCombination();
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
 
@@ -32,4 +32,5 @@ int main() {
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
     return 0;
+    }
 }
