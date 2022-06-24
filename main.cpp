@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "ColorUtil.cpp"
+#include "ColorCoder.h"
 using namespace TelCoColorCoder;
 
 void testNumberToPair(int pairNumber,
