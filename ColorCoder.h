@@ -4,8 +4,8 @@
 #include <iostream>
 namespace TelCoColorCoder
 {
-    enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-    enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+    enum PmyColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+    enum ScdyColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
     extern const char* MajorColorNames[];
     extern int numberOfMajorColors;
     extern const char* MinorColorNames[];
@@ -13,17 +13,17 @@ namespace TelCoColorCoder
 
     class ColorPair {
         private:
-            MajorColor majorColor;
-            MinorColor minorColor;
+            PmyColor majorColor;
+            ScdyColor minorColor;
         public:
-            ColorPair(){}
-            ColorPair(MajorColor major, MinorColor minor):
+
+            ColorPair(PmyColor major, ScdyColor minor):
                 majorColor(major), minorColor(minor)
             {}
-            MajorColor getMajor() {
+            PmyColor getMajor() {
                 return majorColor;
             }
-            MinorColor getMinor() {
+            ScdyColor getMinor() {
                 return minorColor;
             }
             std::string ToString() {
@@ -32,9 +32,10 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
-            ColorPair GetColorFromPairNumber(int pairNumber);
-            int GetPairNumberFromColor(MajorColor major, MinorColor minor);
-            void printCombination();
+
     };
+	ColorPair GetColorFromPairNumber(int pairNumber);
+    int GetPairNumberFromColor(PmyColor major, ScdyColor minor);
+    void printCombination();
 }
 #endif //COLOR_COMBINATION_H
