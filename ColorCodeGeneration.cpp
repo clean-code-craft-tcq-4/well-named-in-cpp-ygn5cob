@@ -16,10 +16,16 @@ namespace ColorCode{
     int GetValueFromColor(primaryColor major, secondaryColor minor) {
         return major * MinorColorsCount + minor + 1;
     }
-    void printColorCodeManual() {
-        std::cout<<std::endl<<"Color code Manual"<<std::endl;
-        for(int i=1;i<=25;i++) {
-            std::cout<<i<<"\t"<<GetColorFromValue(i).ToString()<< std::endl;
-        }
-    }
+    void printColorCodeManual() {     
+        int count = 0;
+        std::cout << "pair number\t Major Color\t Minor Color" << std::endl;
+        for(int i=0; i<MajorColorsCount;i++)
+        {
+          for(int j=0; j<MinorColorsCount;j++)
+             {
+               count++;
+               std::cout << count<<"\t\t"<< MajorColorsList[i]<<"\t\t"<<MinorColorsList[j]<< std::endl;
+             }      
+         }
+     }
 }
