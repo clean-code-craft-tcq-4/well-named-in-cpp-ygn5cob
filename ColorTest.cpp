@@ -2,8 +2,8 @@
 using namespace TelCoColorCoder;
 
 void testNumberToPair(int pairNumber,
-    MajorColor expectedMajor,
-    MinorColor expectedMinor)
+    PmyColor expectedMajor,
+    ScdyColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.ToString() << std::endl;
@@ -12,8 +12,8 @@ void testNumberToPair(int pairNumber,
 }
 
 void testPairToNumber(
-    MajorColor major,
-    MinorColor minor,
+    PmyColor major,
+    ScdyColor minor,
     int expectedPairNumber)
 {
     int pairNumber = GetPairNumberFromColor(major, minor);
