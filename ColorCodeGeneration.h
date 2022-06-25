@@ -13,22 +13,22 @@ namespace ColorCode
     extern int MinorColorsCount;
     class ColorPair {
         private:
-            primaryColor major;
-            secondaryColor minor;
+            primaryColor pmymajor;
+            secondaryColor scdyminor;
         public:
             ColorPair(primaryColor major, secondaryColor minor):
-                major(major), minor(minor)
+                pmymajor(major), scdyminor(minor)
             {}
             primaryColor getMajor() {
-                return major;
+                return pmymajor;
             }
             secondaryColor getMinor() {
-                return minor;
+                return scdyminor;
             }
             std::string ToString() {
-                std::string colorPairStr = MajorColorsList[major];
+                std::string colorPairStr = MajorColorsList[pmymajor];
                 colorPairStr += " ";
-                colorPairStr += MinorColorsList[minor];
+                colorPairStr += MinorColorsList[scdyminor];
                 return colorPairStr;
             }
     };
