@@ -22,6 +22,7 @@ Before adding features and making it bigger,
 split the file.
 This exercise has a limit on the loc (lines of code)
 per file. See the workflow for details.
+compile again
 
 ### New Feature Request
 
